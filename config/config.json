@@ -11,7 +11,11 @@
       ]
     }
   },
-  "externals": {},
+  "externals": {
+    "jquery": "node_modules/jquery/dist/jquery.min.js",
+    "jqueryui": "node_modules/jqueryui/jquery-ui.min.js"
+    
+  },
   "localizedResources": {
     "NavigareCemsWebPartStrings": "lib/webparts/navigareCems/loc/{locale}.js"
   }
