@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "navigare-cems-client-side-solution",
+    "id": "ef2420a7-a631-4ef4-a69d-1a4e329fec67",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/navigare-cems.sppkg"
+  }
+}

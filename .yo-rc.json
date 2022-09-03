@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "onprem19",
+    "version": "1.11.0",
+    "libraryName": "navigare-cems",
+    "libraryId": "ef2420a7-a631-4ef4-a69d-1a4e329fec67",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}
