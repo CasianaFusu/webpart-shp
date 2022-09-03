@@ -29,16 +29,17 @@ export default class NavigareCemsWebPart extends BaseClientSideWebPart<INavigare
   public render(): void {
     this.domElement.innerHTML = `
     <div class="accordion">
-      <h3>Section 1</h3>
-      <div>
-          <p>
-          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-          </p>
+      <h3>Categorii de forte</h3>
+        <div>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cauta structura..">
+
+          <ul id="myUL">
+          <li><a href="#">Statul Major al Fortelor Terestre</a></li>
+          <li><a href="#">Statul Major al Fortelor Navale</a></li>      
+          <li><a href="#">Statul Major al Fortelor Aeriene</a></li>
+        </ul>
       </div>
-      <h3>Section 2</h3>
+      <h3>Directii</h3>
       <div>
           <p>
           Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
@@ -47,7 +48,7 @@ export default class NavigareCemsWebPart extends BaseClientSideWebPart<INavigare
           suscipit faucibus urna.
           </p>
       </div>
-      <h3>Section 3</h3>
+      <h3>Comandamente</h3>
       <div>
           <p>
           Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
@@ -61,7 +62,7 @@ export default class NavigareCemsWebPart extends BaseClientSideWebPart<INavigare
           <li>List item three</li>
           </ul>
       </div>
-      <h3>Section 4</h3>
+      <h3>Alte structuri</h3>
       <div>
           <p>
           Cras dictum. Pellentesque habitant morbi tristique senectus et netus
@@ -75,7 +76,8 @@ export default class NavigareCemsWebPart extends BaseClientSideWebPart<INavigare
           inceptos himenaeos.
           </p>
       </div>
-  </div>`;
+  </div>
+  <input type="button" onclick="greeting();" value ="Click me!" />`;
 
   const accordionOptions: JQueryUI.AccordionOptions = {
     animate: true,
@@ -87,6 +89,7 @@ export default class NavigareCemsWebPart extends BaseClientSideWebPart<INavigare
   };
 
   jQuery('.accordion', this.domElement).accordion(accordionOptions);
+  require('./my-script.js');
   }
 
   protected get dataVersion(): Version {
