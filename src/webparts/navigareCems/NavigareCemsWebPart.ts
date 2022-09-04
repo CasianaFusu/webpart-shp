@@ -33,51 +33,47 @@ export default class NavigareCemsWebPart extends BaseClientSideWebPart<INavigare
         <div>
         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cauta structura..">
 
-          <ul id="myUL">
-          <li><a href="#">Statul Major al Fortelor Terestre</a></li>
-          <li><a href="#">Statul Major al Fortelor Navale</a></li>      
-          <li><a href="#">Statul Major al Fortelor Aeriene</a></li>
+        <ul id="myUL">
+          <li><a href="#">Statul Major al Fortelor Terestre (SMFT)</a></li>
+          <li><a href="#">Statul Major al Fortelor Navale (SMFN)</a></li>      
+          <li><a href="#">Statul Major al Fortelor Aeriene (SMFA)</a></li>
         </ul>
+
       </div>
       <h3>Directii</h3>
       <div>
-          <p>
-          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-          suscipit faucibus urna.
-          </p>
+        <input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Cauta structura..">
+
+        <ul id="myUL1">
+          <li><a href="#">Directia Personal si Mobilizare (DPM)</a></li>
+          <li><a href="#">Directia Planificare Strategica (DPS)</a></li>      
+          <li><a href="#">Directia Operatii (DO)</a></li>
+        </ul>
       </div>
       <h3>Comandamente</h3>
       <div>
-          <p>
-          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-          </p>
-          <ul>
-          <li>List item one</li>
-          <li>List item two</li>
-          <li>List item three</li>
+      <input type="text" id="myInput2" onkeyup="myFunction2()" placeholder="Cauta structura..">
+
+      <ul class="myUL2">
+        <li><a href="#">Comandamentul Apararii Cibernetice (CApC)</a>
+          <ul class="myUL2"> 
+            <li><a href="#">Agentia de Tehnologia Informatiei (ATI)</a></li>
+            <li><a href="#">Agenția de Apărare Cibernetică (AAC)</a></li>
+            <li><a href="#">Cifru</a></li>
+            <li><a href="#">Oficiul 1</a></li>
           </ul>
+        </li>
+        <li><a href="#">Comandamentul Comunicațiilor și Informaticii (CCI)</a></li>      
+        <li><a href="#">Comandamentul Fortelor Intrunite (CFI)</a></li>
+         
+      </ul>
       </div>
       <h3>Alte structuri</h3>
       <div>
-          <p>
-          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-          mauris vel est.
-          </p>
-          <p>
-          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos.
-          </p>
+        Alte structuri
       </div>
   </div>
-  <input type="button" onclick="greeting();" value ="Click me!" />`;
+  `;
 
   const accordionOptions: JQueryUI.AccordionOptions = {
     animate: true,
